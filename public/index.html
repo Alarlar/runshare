@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>RunShare Pro | Athlete Tracker</title>
+
+    <link rel="manifest" href="./manifest.json">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="RunShare">
+    <link rel="apple-touch-icon" href="./logo192.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="map"></div>
+
+    <nav class="top-nav">
+        <div class="logo">RUN<span>SHARE</span></div>
+        <div class="user-info">
+            <span class="loc">📍 Global Feed</span>
+            <button id="logoutBtn" style="display:none;">Logout</button>
+        </div>
+    </nav>
+
+    <div class="center-dashboard">
+        <div class="stat-main">
+            <span id="miles">0.00</span>
+            <small>MILES</small>
+        </div>
+        <div class="divider"></div>
+        <div class="stat-type" id="activeType">RUN</div>
+    </div>
+
+    <div id="authModal" class="modal-overlay" style="display:none;">
+        <div class="modal-content">
+            <h3>Athlete Login</h3>
+            <input type="email" id="loginEmail" placeholder="Email" required>
+            <input type="password" id="loginPassword" placeholder="Password" required>
+            <button id="submitLogin">SIGN IN</button>
+            <button id="closeModal" class="close-btn">Cancel</button>
+        </div>
+    </div>
+
+    <aside class="control-panel">
+        <div class="panel-section">
+            <label>ACTIVITY TYPE</label>
+            <div class="type-selector">
+                <button class="type-btn active" data-type="run">🏃</button>
+                <button class="type-btn" data-type="walk">🚶</button>
+                <button class="type-btn" data-type="cycle">🚲</button>
+                <button class="type-btn" data-type="ski">⛷️</button>
+            </div>
+        </div>
+
+        <button class="save-btn" id="startTrack" style="background:#00ff88; color:#000; margin-bottom: 10px;">
+            START GPS TRACKING
+        </button>
+
+        <button class="save-btn" id="addRunBtn">SAVE MANUALLY</button>
+
+        <button class="clear-btn" id="clearRoute">RESET MAP</button>
+
+        <div class="history-log">
+            <label>RECENT ACTIVITIES</label>
+            <div id="friendsFeed"></div>
+        </div>
+    </aside>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="./browser-app.js"></script>
+</body>
+
+</html>
