@@ -10,7 +10,7 @@ Summary: A social GPS tracker (PWA) that lets you record runs in real-time or dr
 
 ### Mobile & PWA Version
 
-<img src="assets/mobile-demo.gif" width="280">
+<img src="assets/demo_mobile.gif" width="280">
 
 **RunShare Pro** is a full-stack Progressive Web App (PWA) designed for me and friends to track our runs, walks, and cycling routes. It combines real-time GPS tracking with a social feed, allowing users to share their progress and visualize routes on an interactive map.
 
