@@ -1,4 +1,4 @@
-# 🏃 RunShare Pro — Athlete Tracking & Social Mapping
+# 🏃 RunShare Pro Athlete Tracking & Social Mapping
 
 **RunShare Pro** is a full-stack Progressive Web App (PWA) designed for me and friends to track our runs, walks, and cycling routes. It combines real-time GPS tracking with a social feed, allowing users to share their progress and visualize routes on an interactive map.
 
