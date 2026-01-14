@@ -2,6 +2,8 @@
 
 Summary: A social GPS tracker (PWA) that lets you record runs in real-time or draw routes manually. Built with Node.js, Leaflet, and MongoDB.
 
+![Project Demo](./assets/demo.gif)
+
 **RunShare Pro** is a full-stack Progressive Web App (PWA) designed for me and friends to track our runs, walks, and cycling routes. It combines real-time GPS tracking with a social feed, allowing users to share their progress and visualize routes on an interactive map.
 
 Live Demo: https://runshare.onrender.com
